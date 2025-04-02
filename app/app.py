@@ -24,7 +24,7 @@ async def get_patient_by_id(patient_id: str):
         raise HTTPException(status_code=500, detail=f"Internal error. {status}")
 
 @app.get("/patient", reponse_model=dict)
-async def get_patient_by_identifier(system: str, value:str)
+async def get_patient_by_identifier(system: str, value:str):
     status, patient = GetPatientByIdentifier(system, value)
     if status=='success':
         return patient  # Return patient
