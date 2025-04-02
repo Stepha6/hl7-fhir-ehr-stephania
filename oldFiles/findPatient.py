@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     # Nombre de la base de datos y la colección
     db_name = "SamplePatientService"
-    collection_name = "patients"
+    collection_name = "Patients"
 
     # Conectar a MongoDB
     collection = connect_to_mongodb(uri, db_name, collection_name)
